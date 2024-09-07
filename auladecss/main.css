@@ -1,0 +1,171 @@
+/* ATRIBUTO E O QUE VAI SER INSERIDO/ESTILIZADO NELE */
+h1{
+	color: blueviolet; /* Isto altera a cor do site */
+}
+p{
+	color:green;
+	text-align: center; /* ALINHAMENTO DE TEXTO */
+	font-size: 50px; /* TAMANHO DA FONTE */
+}
+/* OUTRA FORMA DE ESCREVER */
+h1{color: blueviolet;text-align: center; font-size: 50px;}
+
+
+.p-texto{
+	color: green;
+	/* Isto é uma classe/ usado em vários elementos */
+}
+
+#titulo-app{
+	color: blueviolet;
+	/* Isto é uma ID/ só usa uma vez num elemento por projeto*/
+}
+
+
+/* CORES */
+
+.nome{
+	color: orange;
+}
+.hexa{
+	color: #0c5fad;
+}
+.rgba{
+	color: rgba(245, 40, 145, 0.04); /* Tem como colocar a transparência da letra neste aqui, no 0.04*/
+}
+
+
+/* Backgorund */
+.div-background{
+	height: 300px;
+	text-align: center;
+	background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigW5LdSqkxgBW-s9zpPnhnuDXdHngViHVA9KUIczQHrFvm-wsChgoena8eEu1YH5oAAfNNpQuBPT36g5Ek7tCrcv9TnvCpOhSehC2aXQshYiXR1-2ENwzkLG0Aif7aYYaAlg_7oCvMQc4w/s1600/1667259027577129-0.png');
+
+}
+.titulo-background{
+	text-align: center;
+	height: 500px;
+	background-color: #000;
+	color: #FFF;
+}
+
+/* Fontes */
+.family{
+	color: #000;
+
+}
+.serif{
+	font-family: "times new roman";
+}
+
+.sans-serif{
+	font-family: arial; 
+}
+.monospace{
+	font-family: "Courier new"
+}
+.family.serif{
+	color: greenyellow; /* Juntou duas classes */
+}
+
+.italic {
+	font-style: italic;
+}
+.oblique{
+	font-style: oblique;
+}
+.bold{
+	font-weight: bold;
+}
+.variants{
+	font-variant: small-caps;
+}
+
+
+/* BOX MODEL */
+body{
+	margin: 0; /* tira a margem do site e aproxima a box mais proxima dos lados */
+}
+
+.boxmodel1{
+	width: 200px; /* altura */
+	height: 200px; /* largura */
+	background-color: green;
+	/* geral */
+	padding: 10px;
+	/* especifico */
+	padding-top: 5px; /* define o espaçamento entre o conteudo + direções */
+ 	padding-left: 5px;
+ 	padding-right: 5px;
+ 	padding-bottom: 5px;
+ 	/* especifico agrupado */
+ 	padding: 5px 5px 5px 5px ; /* resume tudo num só padding, no sentido horario (top, direita,baixo,esquerda)*/
+ 	/* especifico agrupado 3 medidas - top, right - left. botttom */
+ 	padding: 5px 5px 5px;
+ 	/* especifico agrupado 3 medidas - top -bottom , right -left */
+ 	padding: 5px 5px;
+ 	border: 10px solid black; /* borda */
+ 	/* dashed dotted double - tipos DE borda*/
+ 	border-width: 5px 10px 2px 10px; /* altura das bordas por lados (basicamente padding) */
+ 	border-left: black dotted; /* especifica */
+ 	border-radius: 5px; /* arredonda a borda */
+ 	/* empurra o elemento para onde queremos colocar o conteúdo "uma borda sem cor"*/
+ 	margin: 50px;
+ 	/*Assim como os outros tem como mexer com agrupado, específico e afins*/
+ 	/* dislay */
+ 	display: inline-block ; /* mostra e esconde as coisas e afins com none, inline, inline-block(um do lado do outro), block(padrão, tecnicamente já vem sem colocar), */
+ 	/* position */
+
+
+}
+.paragrafo-box{
+	color: black;
+	font-size: 10px;
+	margin: 0;
+}
+.static{
+	position: static;
+}
+.relative{
+	position: relative;
+	background-color: blue;
+	margin:-100px;
+}
+.absolute{
+	position: absolute;
+	background-color: red;
+	right: 0;
+	top: 0;
+}
+.mini-div{
+	height: 10px;
+	weight:10px;
+	top: 10px;
+	left: 10px;
+}
+.box{
+	
+	height: 100;
+	left: 0;
+	top: 10;
+}
+.fixed{
+	position: fixed;
+	background-color: yellow;
+	height: 50px;
+	bottom: 0;
+	right: 0;
+}
+
+.sticky{
+	position: sticky;
+	background-color: yellow;
+	height: 500;
+	bottom: 500;
+	top: 0;
+	padding: 10px 10px 8px 10px;
+
+}
+
+/* float- imagem sem chão
+clear ajuda a õ float não influenciar*/
